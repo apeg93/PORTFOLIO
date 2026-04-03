@@ -495,6 +495,44 @@
           <h2 class="section-title">My Playlists</h2>
 
           <div class="playlist-grid">
+            <!-- APPLE MUSIC -->
+            <div class="playlist-card playlist-card--apple">
+              <div class="playlist-card__header">
+                <div class="playlist-card__icon playlist-card__icon--apple">
+                  <img
+                    src="images/Apple Music Icon.svg"
+                    alt="Apple Music"
+                    width="22"
+                    height="22"
+                  />
+                </div>
+                <div class="playlist-card__meta">
+                  <span
+                    class="playlist-card__service playlist-card__service--apple"
+                    >Apple Music</span
+                  >
+                  <h3 class="playlist-card__name" id="apple-playlist-name">
+                    COZY COVE
+                  </h3>
+                </div>
+              </div>
+              <div class="playlist-embed" id="apple-embed">
+                <iframe
+                  allow="autoplay *; encrypted-media *"
+                  frameborder="0"
+                  height="450"
+                  style="
+                    width: 100%;
+                    overflow: hidden;
+                    background: transparent;
+                    border-radius: 12px;
+                  "
+                  sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+                  src="https://embed.music.apple.com/us/playlist/cozy-cove/pl.u-38oWdVWsYaGBzkq?theme=dark"
+                ></iframe>
+              </div>
+            </div>
+
             <!-- SPOTIFY -->
             <div class="playlist-card playlist-card--spotify">
               <div class="playlist-card__header">
@@ -512,7 +550,7 @@
                     >Spotify</span
                   >
                   <h3 class="playlist-card__name" id="spotify-playlist-name">
-                    My Playlist
+                    WONDROUS IV
                   </h3>
                 </div>
               </div>
@@ -532,44 +570,6 @@
                     picture-in-picture;
                   "
                   loading="lazy"
-                ></iframe>
-              </div>
-            </div>
-
-            <!-- APPLE MUSIC -->
-            <div class="playlist-card playlist-card--apple">
-              <div class="playlist-card__header">
-                <div class="playlist-card__icon playlist-card__icon--apple">
-                  <img
-                    src="images/Apple Music Icon.svg"
-                    alt="Apple Music"
-                    width="22"
-                    height="22"
-                  />
-                </div>
-                <div class="playlist-card__meta">
-                  <span
-                    class="playlist-card__service playlist-card__service--apple"
-                    >Apple Music</span
-                  >
-                  <h3 class="playlist-card__name" id="apple-playlist-name">
-                    Cozy Cove
-                  </h3>
-                </div>
-              </div>
-              <div class="playlist-embed" id="apple-embed">
-                <iframe
-                  allow="autoplay *; encrypted-media *"
-                  frameborder="0"
-                  height="450"
-                  style="
-                    width: 100%;
-                    overflow: hidden;
-                    background: transparent;
-                    border-radius: 12px;
-                  "
-                  sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
-                  src="https://embed.music.apple.com/us/playlist/cozy-cove/pl.u-38oWdVWsYaGBzkq?theme=dark"
                 ></iframe>
               </div>
             </div>
