@@ -1,0 +1,193 @@
+/* ============================================================
+   PLAYLIST SECTION
+   ============================================================ */
+.playlist-wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 32px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.playlist-section {
+  padding: 52px 32px;
+  position: relative;
+  overflow: hidden;
+}
+
+.playlist-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  margin-top: 8px;
+  width: 100%;
+}
+
+.playlist-card {
+  border-radius: var(--radius);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.playlist-card--spotify {
+  background: linear-gradient(
+    135deg,
+    rgba(30, 215, 96, 0.1) 0%,
+    rgba(30, 215, 96, 0.03) 100%
+  );
+  border: 1.5px solid rgba(30, 215, 96, 0.3);
+}
+
+.playlist-card--apple {
+  background: linear-gradient(
+    135deg,
+    rgba(252, 60, 68, 0.09) 0%,
+    rgba(252, 60, 68, 0.02) 100%
+  );
+  border: 1.5px solid rgba(252, 60, 68, 0.28);
+}
+
+.playlist-card__header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.playlist-card__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.playlist-card__icon--spotify {
+  background: #1ed160;
+}
+.playlist-card__icon--apple {
+  background: linear-gradient(135deg, #fc3c44 0%, #ff8a80 100%);
+}
+
+.playlist-card__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.playlist-card__service {
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.playlist-card__service--spotify {
+  color: #1ed160;
+}
+.playlist-card__service--apple {
+  color: #fc3c44;
+}
+
+.playlist-card__name {
+  font-family: var(--mono);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--green-deep);
+  margin: 0;
+}
+
+.playlist-embed {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.playlist-embed iframe {
+  width: 100%;
+  border: none;
+  display: block;
+  border-radius: var(--radius-sm);
+}
+
+.playlist-placeholder {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-style: italic;
+  color: var(--text-light);
+  text-align: center;
+  padding: 22px 16px;
+}
+
+.playlist-input-row {
+  display: flex;
+  gap: 8px;
+}
+
+.playlist-input {
+  flex: 1;
+  min-width: 0;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 9px 13px;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--text-main);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.playlist-input:focus {
+  border-color: var(--green-mid);
+}
+.playlist-input::placeholder {
+  color: var(--text-light);
+}
+
+.playlist-btn {
+  border: none;
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 9px 14px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    color 0.2s;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.playlist-btn--spotify {
+  background: #1ed160;
+  color: #000;
+}
+.playlist-btn--spotify:hover {
+  background: #14a84a;
+  color: #fff;
+}
+.playlist-btn--apple {
+  background: #fc3c44;
+  color: #fff;
+}
+.playlist-btn--apple:hover {
+  background: #d92e35;
+}
+
+.playlist-hint {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-style: italic;
+  color: var(--text-light);
+  line-height: 1.5;
+  margin-top: -4px;
+}

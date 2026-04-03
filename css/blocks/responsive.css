@@ -1,0 +1,276 @@
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+/* Large Tablets (1024px) */
+@media screen and (max-width: 1024px) {
+  .cards__list {
+    grid-template-columns: 1fr;
+    gap: 20px 16px;
+  }
+}
+
+/* Tablet and Landscape Devices */
+@media screen and (max-width: 900px) {
+  .playlist-grid {
+    grid-template-columns: 1fr;
+  }
+  .about {
+    flex-direction: column;
+    gap: 24px;
+    padding: 44px 28px;
+  }
+  .about__left {
+    max-width: none;
+  }
+  .cards__list {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+/* Android Phones (360px - 480px width) */
+@media screen and (max-width: 768px) {
+  .header {
+    height: 175px;
+  }
+  .nav__link {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+  .nav__links {
+    gap: 10px;
+  }
+  .profile {
+    padding: 20px 16px;
+  }
+  .cards__list {
+    grid-template-columns: 1fr;
+    gap: 20px 16px;
+  }
+  .card__image {
+    height: 320px;
+  }
+}
+
+/* Tablets (600px - 768px width) */
+@media screen and (max-width: 630px) {
+  .nav__link {
+    font-size: 6px;
+  }
+}
+
+/* iPhone Standard (375px - 415px width) */
+@media screen and (max-width: 480px) {
+  .nav {
+    padding: 12px 14px;
+  }
+  .nav__brand {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+  .nav__links {
+    gap: 12px;
+  }
+  .nav__link {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+  .header {
+    height: 240px;
+  }
+  .header__banner {
+    font-size: 18px;
+    letter-spacing: 4px;
+    white-space: nowrap;
+  }
+  .content {
+    padding: 0 14px;
+  }
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 16px;
+  }
+  .profile__avatar {
+    height: 180px;
+    width: 180px;
+    margin: 0 0 12px;
+  }
+  .profile__name {
+    font-size: 20px;
+    padding-bottom: 6px;
+  }
+  .profile__description {
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+  .cards__list {
+    grid-template-columns: 1fr;
+    gap: 18px 12px;
+  }
+  .card__image {
+    height: 290px;
+  }
+  .projects__grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+  .section-eyebrow {
+    font-size: 11px;
+  }
+  .section-title {
+    font-size: 24px;
+  }
+  .playlist-section {
+    padding: 28px 14px;
+  }
+}
+
+/* Small Phones (iPhone SE, compact Android - 360px and below) */
+@media screen and (max-width: 400px) {
+  .nav {
+    padding: 10px 12px;
+  }
+  .nav__brand {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+  .nav__links {
+    gap: 10px;
+  }
+  .nav__link {
+    font-size: 7.5px;
+    letter-spacing: 1px;
+  }
+
+  .header {
+    height: 160px;
+  }
+
+  .content {
+    padding: 0 12px;
+  }
+
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 18px 12px;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .profile__avatar {
+    height: 180px;
+    width: 180px;
+    margin: 0 0 10px;
+  }
+  .profile__name {
+    font-size: 18px;
+    padding-bottom: 6px;
+  }
+  .profile__description {
+    margin-bottom: 18px;
+    font-size: 11px;
+  }
+  .profile__edit-btn {
+    justify-content: center;
+    padding-top: 0;
+    margin: 0;
+    font-size: 11px;
+  }
+  .profile__add-btn {
+    margin: 0;
+    width: 100%;
+    font-size: 11px;
+  }
+
+  .about {
+    padding: 28px 12px;
+  }
+  .about__title {
+    font-size: 22px;
+  }
+  .about__paragraph {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .section-eyebrow {
+    font-size: 10px;
+  }
+  .section-title {
+    font-size: 22px;
+  }
+
+  .cards__list {
+    grid-template-columns: 1fr;
+    gap: 14px 10px;
+  }
+  .card__image {
+    height: 250px;
+  }
+  .projects__grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .playlist-section {
+    padding: 24px 12px;
+  }
+
+  .reservation {
+    padding: 24px 12px;
+  }
+
+  .modal__container {
+    padding: 18px 12px 12px;
+  }
+  .modal__close-btn {
+    top: 12px;
+    right: 10px;
+  }
+  .modal__caption {
+    max-width: 180px;
+    height: 24px;
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .form__label {
+    font-size: 12px;
+  }
+  .form__input {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+}
+
+/* iPhone/Android Standard (400px - 630px) */
+@media screen and (max-width: 630px) {
+  .nav {
+    padding: 14px 16px;
+  }
+  .nav__brand {
+    font-size: 13px;
+    letter-spacing: 3px;
+  }
+  .nav__links {
+    gap: 14px;
+  }
+  .nav__link {
+    font-size: 6.5px;
+    letter-spacing: 1px;
+  }
+
+  .header {
+    height: 200px;
+  }
+
+  .content {
+    padding: 0 16px;
+  }
+}

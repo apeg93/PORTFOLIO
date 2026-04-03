@@ -1,0 +1,25 @@
+/* ============================================================
+   CSS VARIABLES
+   ============================================================ */
+:root {
+  --green-darkest: #0d2b1a;
+  --green-deep: #1b4332;
+  --green-mid: #2d6a4f;
+  --green-light: #52b788;
+  --green-pale: #b7e4c7;
+  --white: #f8faf8;
+  --off-white: #eef4ee;
+  --text-dark: #0d1f0d;
+  --text-main: #1a2e1a;
+  --text-muted: #3d5c3d;
+  --text-light: #6a9e6a;
+  --accent: #3a7d44;
+  --border: rgba(45, 106, 79, 0.2);
+  --shadow-sm: 0 2px 12px rgba(27, 67, 50, 0.1);
+  --shadow-md: 0 6px 30px rgba(27, 67, 50, 0.14);
+  --shadow-lg: 0 16px 56px rgba(27, 67, 50, 0.2);
+  --mono: "JetBrains Mono", "Fira Code", "Courier New", monospace;
+  --serif: "Noto Serif", "Times New Roman", serif;
+  --radius: 16px;
+  --radius-sm: 4px;
+}

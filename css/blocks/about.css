@@ -1,0 +1,84 @@
+/* ============================================================
+   ABOUT
+   ============================================================ */
+.about-wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 32px 0 32px;
+}
+
+.about {
+  position: relative;
+  overflow: hidden;
+  padding: 52px 52px 56px;
+  z-index: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.about__left {
+  flex-shrink: 0;
+  max-width: 260px;
+}
+
+.about__title {
+  font-family: var(--mono);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--green-deep);
+  margin: 0;
+}
+
+.about__content {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 6px;
+  position: relative;
+  z-index: 1;
+}
+
+.about__paragraph {
+  font-family: var(--mono);
+  font-size: 14px;
+  line-height: 1.9;
+  font-weight: 400;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* Decorative circles from about.css */
+.about__circle {
+  position: absolute;
+  background: var(--green-mid);
+  border-radius: 50%;
+  width: 426px;
+  height: 426px;
+  top: -152px;
+  right: -129px;
+  z-index: -1;
+  opacity: 0.06;
+  pointer-events: none;
+}
+
+@keyframes pulsate {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.12;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.3);
+  }
+}
+
+.about__circle_animation_blurred {
+  filter: blur(48px);
+  animation: pulsate 2.6s ease-in-out infinite;
+}
