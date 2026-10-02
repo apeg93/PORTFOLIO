@@ -1,0 +1,219 @@
+/* ============================================================
+   RESERVATION / CONTACT FORM
+   ============================================================ */
+.reservation-wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 32px 0 32px;
+}
+
+.reservation {
+  padding: 52px 52px 56px;
+}
+
+.reservation__form {
+  max-width: 480px;
+  font-family: var(--mono);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-top: 4px;
+}
+
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 20px;
+}
+
+.form__label {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  padding: 14px 16px;
+  border: 1.5px solid rgba(45, 106, 79, 0.28);
+  border-radius: var(--radius-sm);
+  font-family: var(--mono);
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--text-main);
+  background: rgba(255, 255, 255, 0.65);
+  outline: none;
+  transition:
+    border-color 0.2s,
+    background 0.2s;
+}
+
+.form__input:focus {
+  border-color: var(--green-mid);
+  background: rgba(255, 255, 255, 0.9);
+}
+.form__input::placeholder {
+  color: var(--text-light);
+}
+
+.form__textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form__button {
+  width: 100%;
+  padding: 18px 0;
+  border: none;
+  border-radius: var(--radius-sm);
+  margin-bottom: 24px;
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--green-deep);
+  cursor: pointer;
+  transition:
+    background 0.5s ease,
+    opacity 0.2s;
+}
+
+.form__button:hover {
+  background: var(--green-mid);
+  opacity: 0.9;
+}
+
+.form__label_type_checkbox {
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  text-transform: none;
+  font-size: 13px;
+  letter-spacing: 0;
+  cursor: pointer;
+  justify-content: flex-start;
+  margin-bottom: 0;
+}
+
+.form__checkbox {
+  accent-color: var(--green-mid);
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* Form Success Animation */
+@keyframes successSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes successCheckmark {
+  0% {
+    opacity: 0;
+    transform: scale(0.3) rotate(-45deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.form__success {
+  display: none;
+  margin-bottom: 20px;
+  padding: 16px 20px;
+  background: linear-gradient(
+    135deg,
+    rgba(82, 183, 136, 0.15) 0%,
+    rgba(82, 183, 136, 0.08) 100%
+  );
+  border: 1.5px solid rgba(82, 183, 136, 0.4);
+  border-radius: var(--radius-sm);
+  text-align: center;
+}
+
+.form__success_visible {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  animation: successSlideIn 0.6s ease-out;
+}
+
+.form__success-icon {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--green-light);
+  animation: successCheckmark 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  min-width: 24px;
+}
+
+.form__success-text {
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--green-deep);
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+/* Form Validation Styles */
+.form__input_type_error {
+  border-color: #d63031;
+  background: rgba(214, 48, 49, 0.08);
+}
+
+.form__input_type_error:focus {
+  border-color: #d63031;
+  background: rgba(214, 48, 49, 0.12);
+}
+
+.form__error {
+  font-size: 11px;
+  font-weight: 500;
+  color: #d63031;
+  letter-spacing: 0.5px;
+  margin-top: 4px;
+  display: none;
+}
+
+.form__error_visible {
+  display: block;
+}
+
+.form__button_disabled {
+  background: rgba(27, 67, 50, 0.5);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.form__button_disabled:hover {
+  background: rgba(27, 67, 50, 0.5);
+  opacity: 0.6;
+}
