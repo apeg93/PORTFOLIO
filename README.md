@@ -65,11 +65,3 @@ Modern, responsive portfolio built with vanilla HTML5, CSS3, and JavaScript. Sho
 
 Angel Peguero Jr — Software Engineer  
 [GitHub](https://github.com) • [Email](mailto:angel.peguero14@gmail.com)
-
-## Notes
-
-- All modal functionality is centralized in `js/index.js`
-- Form validation is reusable across all forms via `js/validation.js`
-- Playlist functionality is self-contained in `js/playlists.js`
-- CSS is organized by component with clear section comments
-- Responsive design is handled in media queries at the bottom of `css/styles.css`
