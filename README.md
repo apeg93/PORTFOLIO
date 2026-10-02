@@ -2,6 +2,10 @@
 
 Modern, responsive portfolio built with vanilla HTML5, CSS3, and JavaScript. Showcases projects, skills, and interactive features.
 
+## Live Page
+
+- https://apeg93.github.io/PORTFOLIO/
+
 ## Features
 
 - **Profile Section** — Bio, avatar, and skill icons (HTML5, CSS3, JavaScript, Node.js, React, Git, GitHub, Figma)
